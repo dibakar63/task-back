@@ -1,0 +1,4 @@
+Get all data-https://trixulo-back.onrender.com/api/v1/get
+Add data-https://trixulo-back.onrender.com/api/v1/add
+Update data-https://trixulo-back.onrender.com/api/v1/update/:id
+Delete data-https://trixulo-back.onrender.com/api/v1/delete/:id
