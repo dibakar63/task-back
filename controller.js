@@ -1,6 +1,6 @@
 const bookModel=require('./model');
 
-const userController=async(req,res)=>{
+const bookController=async(req,res)=>{
    
     try {
         const {name,author,type,rating,price}=req.body;
@@ -61,7 +61,7 @@ const getById=async(req,res)=>{
     }
     
 }
-const updateUsers=async(req,res)=>{
+const updateBooks=async(req,res)=>{
     let id=req.params.id;
     let books;
     try {
@@ -84,7 +84,7 @@ const updateUsers=async(req,res)=>{
         
     }
 }
-const deleteUsers=async(req,res)=>{
+const deleteBooks=async(req,res)=>{
     let id=req.params.id;
     let books;
     try {
@@ -109,8 +109,8 @@ const deleteUsers=async(req,res)=>{
     
 }
 
-module.exports.userController=userController
+module.exports.bookController=bookController
 module.exports.getAllData=getAllData
 module.exports.getById=getById
-module.exports.updateUsers=updateUsers
-module.exports.deleteUsers=deleteUsers
+module.exports.updateBooks=updateBooks
+module.exports.deleteBooks=deleteBooks
